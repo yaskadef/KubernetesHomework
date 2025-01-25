@@ -9,6 +9,7 @@
 
 5. Написан Deployment manifest (deployment.yaml). В этом манифесте был установлен imagePullPolicy: IfNotPresent Далее он был применён с помощью `kubectl apply --filename deployment.yaml --namespace default`. 
 Далее был получен и просмотрен deployment с именем "web" командой `kubectl get deployment web -n default --watch`. На команду был получен ответ:
+
 | NAME | READY | UP-TO-DATE | AVAILABLE | AGE |
 |:----:|:-----:|:----------:|:---------:|:---:|
 |  web |  0/2  |      2     |     0     |  9s |
